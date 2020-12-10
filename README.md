@@ -1,6 +1,7 @@
 # sparcviewer
 
-A shiny app to view timeseries data of our longterm observatories (LTOs) in Ny-Alesund, Samoylov, Trail Valley Creek and Finland.
+A shiny app to view timeseries data of our longterm observatories (LTO's) in Ny-Alesund, Samoylov, Trail Valley Creek and Finland.
+
 App is running here:
 http://sparcwiki.awi-potsdam.de/doku.php?id=observatory:data:sparcview
 
