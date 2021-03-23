@@ -56,19 +56,19 @@ running.system <- 1
 ## read paths and allowed variables
 if (running.system == 1) {
 
-    yearlyDatasetPaths <- read.csv("N:/sparc/LTO/R_database/flagger_sa/yearlyDataPath_auto.csv",
+    yearlyDatasetPaths <- read.csv("N:/sparc/LTO/R_database/Time_series_preprocessing/required-scripts-and-files/settings_shiny/yearlyDataPath_auto.csv",
                                    stringsAsFactors = FALSE, strip.white = TRUE)
-    allowedVariables <- read.csv("N:/sparc/LTO/R_database/flagger_sa/allowedVariables.csv",
+    allowedVariables <- read.csv("N:/sparc/LTO/R_database/Time_series_preprocessing/required-scripts-and-files/settings_shiny/allowedVariables.csv",
                                  stringsAsFactors = FALSE, strip.white = TRUE)
     # read file for modification of style of shiny-app
-    source("N:/sparc/LTO/R_database/flagger_sa/appCSS.R")
+    source("N:/sparc/LTO/R_database/Time_series_preprocessing/required-scripts-and-files/additionals_shiny/appCSS.R")
 } else if (running.system == 2) {
-    yearlyDatasetPaths <- read.csv("/sparc/LTO/R_database/flagger_sa/yearlyDataPath_AWI.csv", stringsAsFactors = FALSE,
+    yearlyDatasetPaths <- read.csv("/sparc/LTO/R_database/Time_series_preprocessing/required-scripts-and-files/settings_shiny/yearlyDataPath_AWI.csv", stringsAsFactors = FALSE,
                                    strip.white = TRUE)
-    allowedVariables <- read.csv("/sparc/LTO/R_database/flagger_sa/allowedVariables.csv", stringsAsFactors = FALSE,
+    allowedVariables <- read.csv("/sparc/LTO/R_database/Time_series_preprocessing/required-scripts-and-files/settings_shiny/allowedVariables.csv", stringsAsFactors = FALSE,
                                  strip.white = TRUE)
     # read file for modification of style of shiny-app
-    source("/sparc/LTO/R_database/flagger_sa/appCSS.R")
+    source("/sparc/LTO/R_database/Time_series_preprocessing/required-scripts-and-files/additionals_shiny/appCSS.R")
 }
 
 allowedVariables$selected <- FALSE
